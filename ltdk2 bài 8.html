@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<script>
+    let tuoi = +prompt('Nhập tuoi: ');
+
+    if (tuoi>0&&tuoi<120)
+    {
+        document.getElementById('inra').innerHTML = 'tuổi cuat người là: ' +tuoi;
+    }else
+        document.getElementById('inra').innerHTML = ' Không là tuổi của người';
+
+
+</script>
+</body>
+</html>

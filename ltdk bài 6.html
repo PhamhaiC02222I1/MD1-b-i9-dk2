@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="inra"></h1>
+<script>
+    let doanhso = +prompt('Nhập doanh so: ');
+
+    let hoahong;
+    let kqua;
+    if (doanhso>=100000000)
+    {
+        hoahong = doanhso*1.5
+
+    }else if(doanhso<100000000&&doanhso>=50000000)
+
+        hoahong = doanhso*1.2;
+    else hoahong = doanhso*0.9;
+    document.getElementById('inra').innerHTML = 'Nhận được hoa hồng: ' +hoahong;
+</script>
+</body>
+</html>

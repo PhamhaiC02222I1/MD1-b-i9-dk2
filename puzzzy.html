@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--  <style>-->
+<!--    img-->
+<!--    {-->
+<!--        box-shadow: red 4px 4px 9px;-->
+
+<!--    }-->
+<!--  </style>-->
+</head>
+<body>
+<img src="1.jpg" id="image1" height="160" width="800" onclick="changeImage()">
+<img src="2.1.jpg" id="image2" height="160" width="800" onclick="changeImage1()">
+<img src="1.11.jpg" id="image3" height="160" width="800" onclick="changeImage2()">
+<img src="3.111.jpg" id="image4" height="160" width="800" onclick="changeImage3()">
+
+
+<script>
+    let image = document.getElementById('image1');
+    let count = 0;
+    let count1 = 0;
+    let count2 = 0;
+    let count3 = 0;
+    let count4 = 0;
+    function changeImage()
+    {
+        let thay = (Math.floor(Math.random()*3));
+        count = thay;
+        image.src = thay+1 + '.jpg';
+        check();
+    }
+    let image1 = document.getElementById('image2');
+    function changeImage1()
+    {
+        let thay1 = (Math.floor(Math.random()*3));
+        count1 = thay1;
+        image1.src = thay1+1.1 + '.jpg';
+        check();
+    }
+    let image2 = document.getElementById('image3');
+    function changeImage2()
+    {
+        let thay2 = (Math.floor(Math.random()*3));
+         count2=thay2;
+        image2.src = thay2.toFixed(2)+1.11 + '.jpg';
+        check();
+    }
+    let image3 = document.getElementById('image4');
+    function changeImage3()
+    {
+        let thay3 = (Math.floor(Math.random()*3));
+        image3.src = thay3.toFixed(3)+1.111 + '.jpg';
+    }
+    function check() {
+        console.log(count +" "+count1)
+
+    }
+</script>
+</body>
+</html>

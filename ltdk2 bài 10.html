@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="inra"></h1>
+<script>
+    let sodien = +prompt('Nhập số số điện: ');
+
+    let tiendien;
+
+    if (sodien<0)
+    {
+       tiendien= 'Nhập lại tiền điện';
+
+    }else if(sodien<=50)
+    {
+        tiendien = sodien*1.6;
+    }else if (sodien<100)
+    {
+        tiendien = ((50*1.6)+(sodien-50)*1.7);
+    }else tiendien = ((50*1.6)+(50*1.7)+(sodien-100)*1.8);
+    document.getElementById('inra').innerHTML =   tiendien;
+</script>
+</body>
+</html>

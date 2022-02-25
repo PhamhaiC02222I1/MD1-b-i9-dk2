@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loveme</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<button id="btm1" onclick="alert(' <3')" type="button">Yes</button>
+<button id="btm2" onclick="thucthi1()" type="button">No</button>
+<script>
+let nut= document.getElementById('btm2');
+let height = window.innerHeight;
+let width = window.innerWidth;
+function init()
+{
+
+    nut.style.position = 'relative';
+    nut.style.left = '0px';
+    nut.style.top = '0px';
+}
+function thucthi1()
+{
+    nut.style.left = parseInt(nut.style.left) +parseInt(Math.random()*width) +'px';
+    nut.style.top = parseInt(nut.style.top) +parseInt(Math.random()*height) +'px';
+}
+window.onload = init();
+</script>
+</body>
+</html>

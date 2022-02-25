@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<script>
+    let a = +prompt('Nhập a: ');
+    let b = +prompt('Nhập b: ');
+    let c = +prompt('Nhập c: ');
+let kqua ;
+    if (b>0&&c>0&&a>0)
+    {
+     if(b>a&&b>c)
+
+          kqua = b +' lớn nhất';
+
+     else if(c>a&&c>b) {
+
+         kqua = c +' lớn nhất';
+     }else kqua = a + ' lớn nhất'
+    }else kqua = 'nhập lại a,b,c'
+    document.getElementById('inra').innerHTML =kqua;
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch case</title>
+</head>
+<body>
+<input type="text" id="nhapso" style="width: 200px" onchange="bam1()">
+<input type="button" value="Tính số ngày" onclick="bam1">
+<h1 id="hienthi"></h1>
+<script>
+
+    function bam1()
+    {
+        let so= +document.getElementById('nhapso').value;
+        let ketqua;
+    switch (so) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            ketqua = 'số ngày là: 31 ngày';
+            break
+        case 2:
+            ketqua = 'số ngày là:28 ngày hoặc 29 ngày';
+            break
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            ketqua = 'số ngày là: 30 ngày';
+
+    }
+        document.getElementById('hienthi').innerHTML = 'Kết quả là: ' +ketqua;
+    }
+</script>
+</body>
+</html>

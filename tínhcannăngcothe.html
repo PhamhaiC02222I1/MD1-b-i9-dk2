@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cannăngcothe</title>
+</head>
+<body>
+<h1 id="cannang"></h1>
+
+<script>
+    let wei = +prompt('Nhập wei: ');
+    let hei = +prompt('Nhập hei');
+    let bmi = wei / (Math.pow(hei,2));
+    let ketqua;
+
+    if (bmi < 18)
+        ketqua="Underweight";
+    else if (bmi < 25.0)
+       ketqua="Normal";
+    else if (bmi < 30.0)
+        ketqua="Overweight";
+    else
+        ketqua="Obese";
+    document.getElementById('cannang').innerHTML = 'Chỉ số cân nặng: ' +ketqua;
+</script>
+</body>
+</html>

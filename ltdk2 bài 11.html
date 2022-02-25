@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="inra"></h1>
+<script>
+    let thunhap = +prompt('Nhập thu nhập: ');
+
+    let thuenop;
+
+    if (thunhap<0)
+    {
+        thuenop = 'Nhập lại thuế';
+
+    }else if(thunhap<=5000000)
+    {
+        thuenop = thunhap*5/100;
+    }else if (thunhap<10000000)
+    {
+        thuenop = (thunhap*10/100)-250000;
+    }else thuenop =(thunhap*15/100)-750000;
+    document.getElementById('inra').innerHTML = thuenop;
+</script>
+</body>
+</html>

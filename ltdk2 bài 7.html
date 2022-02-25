@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthi"></p>
+<script>
+
+    let a = +prompt("Nhập vào a");
+    let b = +prompt("Nhập vào b");
+    let c = +prompt("Nhập vào c");
+    let x1;
+    let x2;
+    let denta;
+    let kqua;
+    if (a+b+c==0)
+        {
+            x1 = 1;
+            x2 = c / a;
+            kqua = 'In ra ' + 'x1 là' + x1 + 'x2 là' + x2;
+        }else if (a - b + c ==0)
+            {x1 = -1;
+                x2 = (-c) / a;
+                kqua = 'In ra ' + 'x1 là' + x1 + 'x2 là' + x2;
+            }else
+    {
+        denta =(b*b)-(4*a*c);
+        if (denta<0) {
+            kqua = 'pt vô nghiệm';
+        }  else if (denta==0) {
+            kqua = 'nghiệm kép: ' + (-b) / (2 * a);
+        }else if (denta>0)
+        {
+            x1=(-b+Math.sqrt(denta)/(2*a));
+            x2=(-b-Math.sqrt(denta)/(2*a));
+            kqua = 'có hai nghiệm: ' +'x1 là' + x1 + 'x2 là' + x2;
+        }
+    }
+
+
+
+
+    document.getElementById('hienthi').innerHTML = 'kết quả là: ' +kqua;
+</script>
+</body>
+</html>

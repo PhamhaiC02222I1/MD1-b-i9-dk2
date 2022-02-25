@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="inra"></h1>
+<script>
+    let vondau= +prompt('Nhập vốn ban đầu: ');
+    let n=+prompt('Nhập số tháng: ');
+    let tiennhan;
+    let i=6/100;
+    if(vondau<0&&n<0)
+    {
+        kqua= 'Nhập lại';
+    }else
+    {
+        tiennhan =vondau*(Math.pow((1+i),n));
+        document.getElementById('inra').innerHTML = 'Tiền lãi kép là: ' +tiennhan;
+    }
+</script>
+
+</body>
+</html>

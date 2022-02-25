@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthi"></p>
+<script>
+
+    let a = +prompt("Nhập vào a");
+    let b = +prompt("Nhập vào b")
+    let x = (-b)/a;
+    let kqua;
+    if(a===0&&b===0)
+    {
+      kqua='phương trinh vô số nghiệm'
+    }else if (a===0&&b!=0) {
+        kqua = 'pt vô nghiệm';
+    }else kqua = 'nghiệm duy nhất ' +x;
+    document.getElementById('hienthi').innerHTML = 'kết quả là: ' +kqua;
+</script>
+</body>
+</html>

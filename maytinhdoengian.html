@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+<table style=border-style:solid>
+    <tr>
+        <input type="text" style="width: 108px" onchange="bam3" id="dulieu">
+
+    </tr>
+    <tr><br></tr>
+    <tr>
+        <td>
+            <input type="button" value="1" style="color: blue" onclick="bam2(1)", ></td>
+        <td>
+            <input type="button" value="2" style="color: blue" onclick="bam2(2)"></td>
+        <td>
+            <input type="button" value="3" style="color: blue" onclick="bam2(3)"></td>
+        <td>
+            <input type="button" value="+" style="color: blue" onclick="bam2('+')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" style="color: blue" onclick="bam2(4)"></td>
+        <td><input type="button" value="5" style="color: blue" onclick="bam2(5)"></td>
+        <td><input type="button" value="6" style="color: blue" onclick="bam2(6)"></td>
+        <td><input type="button" value="-" style="color: blue" onclick="bam2('-')"></td>
+    </tr>
+    <tr>
+
+        <td><input type="button" value="7" style="color: blue" onclick="bam2(7)"></td>
+
+        <td><input type="button" value="8" style="color: blue" onclick="bam2(8)"></td>
+        <td><input type="button" value="9" style="color: blue" onclick="bam2(9)"></td>
+        <td><input type="button" value="*" style="color: blue" onclick="bam2('*')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="C" style="color: blue" onclick="xoa()"></td>
+        <td><input type="button" value="0" style="color: blue" onclick="bam2(0)"></td>
+        <td><input type="button" value="=" style="color: blue" onclick="tinh()"></td>
+        <td><input type="button" value="/" style="color: blue" onclick="bam2('/')"></td>
+    </tr>
+
+</table>
+<script>
+    function bam2(data)
+    {
+        document.getElementById('dulieu').value +=data ;
+    }
+    function xoa()
+    {
+        document.getElementById('dulieu').value = '';
+    }
+    function tinh()
+    {
+
+        document.getElementById('dulieu').value = eval(document.getElementById('dulieu').value);
+    }
+</script>
+</body>
+</html>

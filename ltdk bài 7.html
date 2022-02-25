@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="inra"></h1>
+<script>
+    let phutgoi = +prompt('Nhập số phút gọi: ');
+
+    let tiendt;
+
+    if (phutgoi>=120)
+    {
+        tiendt = phutgoi*300;
+
+    }else if(phutgoi<120&&phutgoi>=50)
+
+        tiendt = phutgoi*500;
+    else tiendt = phutgoi*900;
+    document.getElementById('inra').innerHTML = 'Tiền điện thoại: ' +tiendt;
+</script>
+</body>
+</html>
